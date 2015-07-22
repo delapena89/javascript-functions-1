@@ -36,18 +36,34 @@ function stringCapitalize(string) {
 }
 console.log(stringCapitalize(string));
 
+// // 5 - Define a function called evenNumbers that takes a random integer, from 0 to 100, and outputs all the even integers from 0 to that random number.
+function evenNumbers(num) {
+	if (num > 100 || num < 0) {
+		return "Error";				
+}
+
+var even = [];
+  for (var i = 0; i <= num; i++) {
+    if (i%2 === 0) {
+      even.push(i);
+    }
+  }
+  return even;
+}
+console.log(evenNumbers(77));
+
+
 // 6 - Define a function called isDivisible that takes two arguments and returns a boolean. Return true if the first argument is divisible by the second; otherwise, return false.
 
-function isDivisible(x, y) {
-if (x % y === 0);{
-	return true;	
-	}
-if (x % y !== 0);{
-	return false;
+function isDivisible(num1, num2) {
+	if (num1 % num2 === 0) {
+		return true;	
+	} else {
+		return false;
+	}	
 }
-console.log(isDivisible(10, 5));
-}
-	
+console.log(isDivisible(9, 5));
+
 
 
 
